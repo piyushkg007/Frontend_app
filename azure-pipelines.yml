@@ -7,7 +7,11 @@ trigger:
   branches:
     include:
       - main
-
+resources:
+ pipelines:
+   - pipeline: "cicd1"
+     source: "piyushkg007.cicd1"
+     trigger: true
 pool: default
   
 
