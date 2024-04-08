@@ -33,6 +33,11 @@ steps:
   displayName: 'for tag'
 
 - script: |
+     gcloud auth configure-docker \us-central1-docker.pkg.dev 
+      
+
+  displayName: 'for auth'
+- script: |
      sudo docker push us-central1-docker.pkg.dev/prj-qa-workshop-poc/piyush-repo/front-end:latest 
       
 
