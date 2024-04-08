@@ -7,11 +7,7 @@ trigger:
   branches:
     include:
       - main
-resources:
- pipelines:
-   - pipeline: "cicd1"
-     source: "piyushkg007.cicd1"
-     trigger: true
+
 pool: default
   
 
@@ -41,4 +37,10 @@ steps:
       
 
   displayName: 'for push'
+  
+resources:
+ pipelines:
+   - pipeline: "cicd1"
+     source: "piyushkg007.cicd1"
+     trigger: true
 
