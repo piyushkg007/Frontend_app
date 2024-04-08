@@ -43,9 +43,5 @@ steps:
 
   displayName: 'for push'
   
-resources:
- pipelines:
-   - pipeline: "cicd1"
-     source: "piyushkg007.cicd1"
-     trigger: true
+
 
